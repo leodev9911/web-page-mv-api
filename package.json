@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node --watch ./src/index.js",
+        "dev": "node --watch ./api/index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "build:ui": "@powershell Remove-Item -Recurse -Force dist ; cd C:\\Leo\\Programacion\\web-mv\\client ; pnpm build ; Copy-Item -Recurse dist C:\\Leo\\Programacion\\web-mv\\api"
     },

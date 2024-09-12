@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/greet', (req, res) => {
-    res.send(<h1>Hola</h1>)
+    res.send('<h1>Hola</h1>')
 })
 
 app.post('/api/recaptcha', async(req, res) => {
