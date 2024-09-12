@@ -14,11 +14,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
 });
 
-app.get('/greet', (req, res) => {
+app.get('/api/greet', (req, res) => {
     res.send(<h1>Hola</h1>)
 })
 
-app.post('/recaptcha', async(req, res) => {
+app.post('/api/recaptcha', async(req, res) => {
     const { token } = req.body;
 
     const params = new URLSearchParams({
@@ -46,7 +46,7 @@ app.post('/recaptcha', async(req, res) => {
 
 })
 
-app.post('/send-email', async (req, res) => {
+app.post('/api/send-email', async (req, res) => {
     const { name, email, message } = req.body;
 
     const mailOptions = {
