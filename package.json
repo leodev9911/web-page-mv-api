@@ -1,0 +1,22 @@
+{
+    "name": "hr-smm-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node --watch ./src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:ui": "@powershell Remove-Item -Recurse -Force dist ; cd C:\\Leo\\Programacion\\web-mv\\client ; pnpm build ; Copy-Item -Recurse dist C:\\Leo\\Programacion\\web-mv\\api"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "mongoose": "^8.5.0",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.9.14"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

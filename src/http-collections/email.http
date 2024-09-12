@@ -1,0 +1,9 @@
+### Send an email to neniruano@gmail.com
+POST http://localhost:8080/send-email
+Content-Type: application/json
+
+{
+    "name": "Leo",
+    "email": "leonardo99112821385@gmail.com",
+    "message": "Probando 23" 
+}
