@@ -6,9 +6,9 @@ const logger = require('./utils/logger');
 const transporter = require('./utils/transporter');
 const cors = require('cors');
 
-app.use(cors());
 app.use(express.static('dist'));
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
