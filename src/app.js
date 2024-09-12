@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
 });
 
+app.get('/greet', (req, res) => {
+    res.send(<h1>Hola</h1>)
+})
+
 app.post('/recaptcha', async(req, res) => {
     const { token } = req.body;
 
